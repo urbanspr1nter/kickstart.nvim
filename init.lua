@@ -228,6 +228,8 @@ vim.opt.rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
+  { 'wakatime/vim-wakatime', lazy = false },
+
   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
 
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
