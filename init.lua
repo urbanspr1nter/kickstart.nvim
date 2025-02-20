@@ -147,7 +147,8 @@ vim.opt.rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
-  { 'wakatime/vim-wakatime', lazy = false },
+  -- { 'wakatime/vim-wakatime', lazy = false },
+  { 'prettier/vim-prettier' },
 
   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
 
@@ -500,6 +501,7 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
+        ts_ls = {},
         --
 
         lua_ls = {
